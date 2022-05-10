@@ -1,0 +1,42 @@
+body {
+  background: aquamarine;
+}
+
+.myeducation {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  padding: 25px;
+}
+
+.myeducation input[type="radio"] {
+  display: none;
+}
+
+.myeducation label {
+  padding: 25px;
+  background: #b7b6b6;
+  font-weight: bold;
+  margin-right: 10px;
+  border: 2px solid gray;
+  border-bottom: none;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.myeducation .tab {
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  border: 2px solid gray;
+  order: 1;
+  display: none;
+}
+
+.myeducation input[type='radio']:checked + label + .tab {
+  display: block;
+}
+
+.myeducation input[type='radio']:checked + label {
+  background-color: #fff;
+}
